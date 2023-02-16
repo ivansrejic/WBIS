@@ -48,6 +48,7 @@ class AuthController extends Controller
     {
         Application::$app->session->remove(Application::$app->session->USER_SESSION);
         Application::$app->session->remove(Application::$app->session->ROLE_SESSION);
+        Application::$app->session->remove(Application::$app->session->CART_SESSION);
         header("location:" . "/login");
     }
 

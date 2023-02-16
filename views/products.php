@@ -53,8 +53,7 @@
                     "<td>" +
                     "<div class='d-flex px-2 py-3'>" +
                     "<div>" +
-                    "<img src='item.image_url' class='avatar avatar-sm me-3' alt='user1'>" +
-                    "</div>" +
+                    `<img src='${item.image_url}' class='avatar' style='height: 120px; width:120px; object-fit: contain' alt='...'>` +                    "</div>" +
                     "<div class='d-flex flex-column justify-content-center'>" +
                     "<h6 class='mb-0 text-sm'>" + item.brand + " " +  item.model + "</h6>" +
                     "<p class='text-xs text-secondary mb-0'>"+ item.description +"</p>" +

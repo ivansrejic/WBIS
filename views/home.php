@@ -1,4 +1,4 @@
-<div class="row p-3 mt-8 " id="products-panel">
+<div class="row mt-8 justify-content-center" id="products-panel" style="gap:10px">
 </div>
 <script>
     $(document).ready(function (){
@@ -10,18 +10,20 @@
     $(document).on('click','.btn-add-to-cart', function(){
         var productId = $(this).data("id");
         var route = $(this).data("route");
-        var data = { "product_id" : productId}
+        var data = { "id" : productId}
         $.post(route, data , function( result ) {
-            if(result.success)
+            var jsonResult = JSON.parse(result);
+            if (jsonResult.success === true)
             {
-                toastr.success(result.message);
+                toastr.success(jsonResult.message);
             }
-            if(!result.success)
+
+            if (jsonResult.success === false)
             {
-                toastr.error(result.message);
+                toastr.error(jsonResult.message);
             }
-        } )
-    })
+        });
+    });
 </script>
 
 

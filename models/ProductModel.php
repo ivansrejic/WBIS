@@ -12,7 +12,7 @@ class ProductModel extends DbModel
     public $description;
     public $price;
     public $image_url;
-    public $user_id;
+    //public $user_id;
 
 
     public function rules(): array
@@ -40,4 +40,5 @@ class ProductModel extends DbModel
             "image_url"
         ];
     }
+
 }

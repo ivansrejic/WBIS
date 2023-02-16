@@ -11,10 +11,9 @@ use app\models\ProductModel;
     {
         foreach($params->products as $product)
         {
-            echo "<div class='col-md-3'>";
-            echo "<div class='card' style='height: 100%'>";
-            echo "<img src='$product->image_url' class='card-img-top' style='max-height: 180px' alt='...'>";
-            echo "<div class='card-body'>";
+            echo "<div class='col-md-3 border-bottom'>";
+            echo "<div class='card' style='height: 100%;'>";
+            echo "<img src='$product->image_url' class='card-img-top' style='max-height: 180px; object-fit: contain' alt='...'>";
             echo "<h5 class='card-title'>$product->brand</h5>";
             echo "<p class='card-text'>$product->model</p>";
             echo "<p class='card-text'>$product->description</p>";

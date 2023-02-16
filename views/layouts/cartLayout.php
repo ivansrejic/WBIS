@@ -77,37 +77,13 @@ if ($error !== false) {
                     <div class="collapse navbar-collapse" id="navigation">
                         <ul class="navbar-nav me-1 ms-auto">
                             <li class="nav-item">
-
-                            </li><li class="nav-item">
-                                <a class="nav-link me-2" href="/cart">
-                                    <i class="fas fa-shopping-cart opacity-6 text-dark me-1"></i>
-                                    Cart
-                                </a>
-                            </li>
                             <li class="nav-item">
-                                <a class="nav-link me-2" href="/registration">
+                                <a class="nav-link me-2" href="/logout">
                                     <i class="fas fa-user-circle opacity-6 text-dark me-1"></i>
-                                    Sign Up
+                                    Log out
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link me-2" href="/login">
-                                    <i class="fas fa-key opacity-6 text-dark me-1"></i>
-                                    Sign In
-                                </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link me-2" href="/products">
-                                    <i class="fas fa-thin fa-mobile opacity-6"></i>
-                                     My products
-                                </a>
-                            </li>
-                            <div class="nav-item">
-                                <a class="nav-link me-2" href="/admin">
-                                    <i class="fas fa-thin fa-lock"></i>
-                                    Admin
-                                </a>
-                            </div>
                         </ul>
                     </div>
                 </div>

@@ -54,6 +54,15 @@ abstract class DbModel extends Model
         return $dbResult->fetch_assoc();
     }
 
+    public function lastCreated()
+    {
+        $tableName = $this->tableName();
+        $sqlString = "SELECT * FROM $tableName order by id desc limit 1;";
+        $dbResult = $this->db->con()->query($sqlString);
+
+        return $dbResult->fetch_assoc();
+    }
+
     public function delete($where)
     {
         $tableName = $this->tableName();

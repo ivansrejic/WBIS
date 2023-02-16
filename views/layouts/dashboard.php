@@ -33,13 +33,17 @@
     <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
     <!-- CSS Files -->
     <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.6" rel="stylesheet" />
-    <link href="../assets/js/plugins/toastr/toastr.min.css" rel="stylesheet" />
+    <link href="../../public/assets/js/plugins/toastr/toastr.min.css" rel="stylesheet" />
+    <link href="../../public/assets/js/plugins/chart.js/Chart.min.css" rel="stylesheet" />
 
     <script
             src="https://code.jquery.com/jquery-3.6.1.min.js"
             integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
             crossorigin="anonymous"></script>
-    <script src="../assets/js/plugins/toastr/toastr.min.js"></script>
+    <script src="../../public/assets/js/plugins/toastr/toastr.min.js"></script>
+    <script src="../../public/assets/js/plugins/chart.js/Chart.bundle.min.js"></script>
+    <script src="../../public/assets/js/plugins/chart.js/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
 
@@ -71,6 +75,7 @@
             <div class="nav-item d-flex align-items-center">
                 <a href="../logout" class="nav-link text-body font-weight-bold px-0">
                     <span class="d-sm-inline d-none">Log out</span>
+                </a>
                 </a>
             </div>
             </div>

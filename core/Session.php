@@ -6,6 +6,7 @@ class Session
 {
     public string $USER_SESSION = "USER";
     public string $ROLE_SESSION = "ROLE";
+    public string $CART_SESSION = "CART";
     public string $FLASH_MESSAGE_SESSION = "FLASH_MESSAGE";
     public string $FLASH_MESSAGE_SUCCESS = "FLASH_MESSAGE_SUCCESS";
     public string $FLASH_MESSAGE_ERROR = "FLASH_MESSAGE_ERROR";
